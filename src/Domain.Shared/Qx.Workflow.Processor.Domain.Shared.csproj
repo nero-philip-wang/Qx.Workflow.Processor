@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Qx.ApiFx.Core" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.Utils" Version="8.*" />
+  </ItemGroup>
+</Project>

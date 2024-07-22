@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <IsPackable>false</IsPackable>
+    <UserSecretsId>9c57240e-0046-4274-83fc-e39f647003de</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Contracts\Qx.Workflow.Processor.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Application\Qx.Workflow.Processor.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Qx.ApiFx.Swagger" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.Mvc" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.Log" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.MultiTenant" Version="8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Languages\en.po">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Languages\zh.po">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

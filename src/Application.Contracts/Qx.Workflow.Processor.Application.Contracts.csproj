@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Qx.ApiFx.Core" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.DDD" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.OAuth" Version="8.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Shared\Qx.Workflow.Processor.Domain.Shared.csproj" />
+  </ItemGroup>
+</Project>

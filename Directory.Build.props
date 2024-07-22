@@ -1,0 +1,32 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)properties/qx_common.props" />
+
+  <PropertyGroup>
+    <!-- 根目录 -->
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <!-- pack 生成地址 -->
+    <PackageOutputPath>$(RepoRoot)package/</PackageOutputPath>
+    <!-- bin -->
+    <OutputPath>$(RepoRoot)bin/</OutputPath>
+    <!-- xml目录 -->
+    <DocumentationFile>$(RepoRoot)bin/$(MSBuildProjectName).xml</DocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+
+  <!-- Version -->
+  <PropertyGroup>
+    <!-- Version for binaries, nuget packages generated from this repo. -->
+    <MajorVersion>3</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <BuildVersion>0</BuildVersion>
+    <Revision>0</Revision>
+    <Version>$(MajorVersion).$(MinorVersion).$(BuildVersion).$(Revision)</Version>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <AssemblyFileVersion>$(Version)</AssemblyFileVersion>
+    <FileVersion>$(Version)</FileVersion>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <RootNamespace>Qx.Workflow.Processor</RootNamespace>
+  </PropertyGroup>
+</Project>

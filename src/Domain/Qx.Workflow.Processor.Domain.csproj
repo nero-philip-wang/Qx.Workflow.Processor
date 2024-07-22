@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <!--<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.*" />-->
+    <PackageReference Include="Qx.ApiFx.DDD" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.EFCore" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.OAuth" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.AppIdAuth" Version="8.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.*" />
+	<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Shared\Qx.Workflow.Processor.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+</Project>

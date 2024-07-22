@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Qx.ApiFx.AutoMapper" Version="8.*" />
+    <PackageReference Include="Qx.ApiFx.JwtAuth" Version="8.*" />
+	<PackageReference Include="Qx.ApiFx.Mvc" Version="8.*" />
+	<PackageReference Include="Z.Expressions.Eval" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Contracts\Qx.Workflow.Processor.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Domain\Qx.Workflow.Processor.Domain.csproj" />
+  </ItemGroup>
+</Project>
